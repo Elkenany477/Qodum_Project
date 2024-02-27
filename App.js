@@ -1,7 +1,8 @@
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
- *
+ * #3C5EAB
+ * #2D2D2D
  * @format
  */
 
@@ -17,12 +18,18 @@ import {
   View,
 } from 'react-native';
 
-
+import Welcome  from './Screens/Auth/Welcome';
+import Login from './Screens/Auth/Login';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.txt}>Welcome</Text>
+      <StatusBar
+                translucent={true}
+                barStyle={'dark-content'}
+                backgroundColor={'transparent'}
+            />
+      <Welcome/>
     </View>
   )
 }
@@ -33,11 +40,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     justifyContent: "center"
   },
-  txt: {
-    fontSize: 20,
-    color: "#000",
-    textAlign: "center"
-  }
 })
 
 export default App;
